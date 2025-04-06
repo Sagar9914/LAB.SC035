@@ -1,68 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="port.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Welcome to Laptop Rental System</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <h1 class="logo">Portfolio Website</h1>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Laptop Rental System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
             </ul>
-        </nav>
-    </header>
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h2>Hello,</h2>
-            <h1>I'm Sagar Kadam</h1>
-            <p>Photographer | Designer | Developer</p>
-            <a href="#contact" class="btn">Get In Touch</a>
-            <p class="email">sagarkadam@gmail.com</p>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="./index2.html">Return Laptop</a></button>
+            </form>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
-        <img src="3d-carton-of-boy-going-to-school-ai-photo (1).jpg" alt="Profile Picture" class="profile-img" width="500" height="400">
-    </section>
-    <section class="skills">
-        <h2>Skills</h2>
-        <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Python</span>
-            <span>Java</span>
-        </div>
-    </section>
-    <section class="projects" id="projects">
-        <h2>Projects</h2>
-        <div class="project-card" onclick="toggleProjectDetails('project1-details')">Project 1</div>
-        <div id="project1-details" class="project-details" style="display: none;">
-            <ul>
-                <h1>LAPTOP RENTAL SYSTEM</h1>
-                <li><strong>User Interface (UI):</strong> A clean and responsive design using HTML & CSS.</li>
-                <li><strong>Laptop Listings:</strong> Display available laptops with specifications, pricing, and rental duration.</li>
-                <li><strong>Search & Filter:</strong> JavaScript-powered filtering options for an optimized user experience.</li>
-                <li><strong>Booking System:</strong> Interactive forms for users to rent laptops and provide details.</li>
-                <li><strong>Dynamic Content:</strong> JavaScript for real-time updates, form validation, and user interactions.</li>
-                <li><strong>Responsiveness:</strong> Ensuring compatibility across desktops, tablets, and mobile devices.</li>
-            </ul>
-        </div>
-        <div class="project-card">Project 2</div>
-        <div class="project-card">Project 3</div>
-    </section>
-    <section class="contact" id="contact">
-        <h2>Contact</h2>
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
+    </nav>
+
+    <div id="message"></div>
+
+
+    <div class="container my-3">
+        <img src="./best-8-gb-graphics-card-laptops.webp" style="height: 300px" width="1080px">
+        <hr>
+        <h1>Manage Rental System</h1>
+        <hr>
+        <h3>Available Laptop For Rent:</h3>
+        <hr>
+        <h4>1. HP</h4>
+        <hr>
+        <img src="./hp.png" style="height: 300px" width="px">
+        <p><b>HP Victus Gaming Laptop, 12th Gen Intel Core i5-12450H, 4GB RTX 3050 GPU, 15.6-inch (39.6 cm) FHD IPS 144Hz, 16GB DDR4, 512GB SSD, Backlit KB, B&O Dual Speakers (Win 11, MSO, Blue, 2.37 kg), fa0666TX</b>
+        </p>
+        <hr>
+        <h4>2. DELL</h4>
+        <hr>
+        <img src="./dell.webp" style="height: 300px" width="px">
+    </br>
+        <pr><b>Dell Inspiron 7430 2in1 Touch Laptop, 13th Gen Intel Core i3-1315U/8GB/1TB SSD/14.0" (35.56cm) FHD+,16:10 Aspect Ratio/Backlit KB+FPR/Win 11+MSO'...</b></pr>
+        <hr>
+        <h4>3. LENOVO</h4>
+        <hr>
+        <img src="./lenovo.jpeg" style="height: 300px" width="px">
+    </br>
+    <pr><b>Lenovo IdeaPad Gaming 3 11th Gen Intel Core i5-11320H 15.6" (39.62cm) FHD IPS 60Hz Gaming Laptop (8GB/512GB SSD/Windows 11/NVIDIA RTX 2050 4GB/Alexa/3 Month Game Pass/Shadow Black/2.25Kg), 82K101PCIN</b></pr>
+        <hr>
+        <h2>Fill Detail For Rent </h2>
+        <form id="libraryForm">
+            <div class="form-group row">
+                <label for="bookName" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="bookName" placeholder=" Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="phonenonumber" class="col-sm-2 col-form-label">MobileNumber</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="phonenumber" placeholder=" phonenumber">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Author" class="col-sm-2 col-form-label">Brand</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="author" placeholder="Brand">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="days" class="col-sm-2 col-form-label">Duration</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="days" placeholder="days">
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Type</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="type" id="Home" value="Home">
+                            <label class="form-check-label" for="Home">
+                                Home
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="type" id="programming"
+                                value="programming">
+                            <label class="form-check-label" for="programming">
+                                Computer Programming
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="type" id="Job" value="Job">
+                            <label class="form-check-label" for="Job">
+                                Job
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Add Details</button>
+                </div>
+            </div>
         </form>
-    </section>
-    <script src="port.js"></script>
+
+        <div id="table">
+            <h1>Your Record</h1>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">MobileNumber</th>
+                        <th scope="col">Brand</th>
+                        <th scope="col">Duration</th>
+                        <th scope="col">Type</th>
+                    </tr>
+                </thead>
+                <tbody id='tableBody'></tbody>
+            </table>
+        </div>
+    </div>
+    <div  style="text-align: center; color: brown; font-size: xx-large;" >
+        <b>THANKS FOR CONTACT US.....</b>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="index.js"></script> -->
+    <script src="indexes6.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 </html>

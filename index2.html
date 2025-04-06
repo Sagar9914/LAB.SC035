@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Rental System</title>
+    <script src="app.js" defer></script>
+</head>
+<body style="background-color: beige;"> 
+    <h1 style="text-align: center; border: 2px solid black; background-color: aquamarine;">Manage Rental System</h1>
+    <h3 style="text-align: center;">Put some details about rented laptop like :</h3>
+    <p id="userDetails" style="text-align: center;">
+    </p>
+    <h2 style="text-align: center;">Return Laptop</h2>
+    <form id="returnForm" action="#" style="text-align: center;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" required><br>
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand" required><br>
+        <label for="duration">Duration (days):</label>
+        <input type="number" id="duration" name="duration" min="1" required><br>
+        <button type="button" id="submitBtn">Return Laptop</button>
+    </form>
+    <h2 style="text-align: center;">Your Return Laptop Record:</h2>
+    <p id="returnRecords" style="text-align: center;"></p>
+    <img src="./partnership-handshake-innovation-corporate-business-concept_53876-104048.avif"style="height: 300px" width="1500px"  >
+    <p style="text-align: center;">THANKS FOR CONTACT US....</p>
+</body>
+</html>
