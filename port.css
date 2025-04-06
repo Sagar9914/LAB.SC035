@@ -1,0 +1,152 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: white;
+    text-align: center;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.profile-img {
+    width: 250px; /* Adjust size as needed */
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white; /* Optional: adds a border */
+}
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('Luxurious-Blue-3D-Rendered-Background-with-Abstract-Wave-Architecture-Ideal_5587789_wh1200.jpg') no-repeat center center/cover;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.hero .btn {
+    background: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.section-bar {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.skills, .projects, .contact {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(36, 21, 91, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.skills .tags span {
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.projects .project-card {
+    background: white;
+    color: rgb(37, 29, 114);
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.project-details {
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}

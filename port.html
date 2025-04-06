@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Portfolio Website</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Hello,</h2>
+            <h1>I'm Sagar Kadam</h1>
+            <p>Photographer | Designer | Developer</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+            <p class="email">sagarkadam@gmail.com</p>
+        </div>
+        <img src="3d-carton-of-boy-going-to-school-ai-photo (1).jpg" alt="Profile Picture" class="profile-img" width="500" height="400">
+    </section>
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>Java</span>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-card" onclick="toggleProjectDetails('project1-details')">Project 1</div>
+        <div id="project1-details" class="project-details" style="display: none;">
+            <ul>
+                <h1>LAPTOP RENTAL SYSTEM</h1>
+                <li><strong>User Interface (UI):</strong> A clean and responsive design using HTML & CSS.</li>
+                <li><strong>Laptop Listings:</strong> Display available laptops with specifications, pricing, and rental duration.</li>
+                <li><strong>Search & Filter:</strong> JavaScript-powered filtering options for an optimized user experience.</li>
+                <li><strong>Booking System:</strong> Interactive forms for users to rent laptops and provide details.</li>
+                <li><strong>Dynamic Content:</strong> JavaScript for real-time updates, form validation, and user interactions.</li>
+                <li><strong>Responsiveness:</strong> Ensuring compatibility across desktops, tablets, and mobile devices.</li>
+            </ul>
+        </div>
+        <div class="project-card">Project 2</div>
+        <div class="project-card">Project 3</div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <script src="port.js"></script>
+</body>
+</html>
